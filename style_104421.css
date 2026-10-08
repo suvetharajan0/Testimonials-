@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.testimonial-section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 20px;
+    background: black;
+    color:white;
+}
+.heading{
+    padding: 10px;
+    margin-bottom:50px;
+    line-height: 30px;
+}
+.badge{
+  display:inline-block;
+  background: rgb(19, 19, 246);
+  color:white;
+  padding: 1px 10px;
+  font-size: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom:20px;
+}
+.customer{
+    color:blue;
+}
+.heading p{
+    color: aliceblue ;
+    font-size:small;
+    margin-top: 10px;
+}
+.nav-btn{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color:blue;
+    color:white;
+    border:none;
+}
+.card_whole_wrapper{
+    display: flex;
+    position:relative;
+}
+.card-wrapper{
+    display: none;
+    width: 400px;
+    border-radius: 20px;
+    background: linear-gradient(90deg,black, blue, black);
+    margin:30px;
+    height: 300px;
+}
+.card-wrapper.active{
+    display: block;
+    position:relative;
+    width: 400px;
+    border: 1px solid blue;
+    border-radius: 20px;
+    background: linear-gradient(90deg,black, blue, black);
+    margin: auto;
+    height: 300px;
+}
+.card{
+    display:flex;
+    padding: 20px;
+    gap: 20px;
+}
+.card h1{
+    font-size: 16px;
+}
+.profile{
+    border-radius: 50%;
+    text-align:left;
+    background:linear-gradient(90deg, rgb(83, 83, 244),rgb(199, 197, 197));
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 50px;
+    height: 50px; 
+    padding: 10px;  
+}
+.role{
+    position: absolute;
+    top: 50px;
+    left: 95px;
+   color: aliceblue;
+   margin-bottom: 10px;
+   font-size:10px;      
+}
+.star {
+    position:absolute;
+    left:30px;
+}
+.quote{
+    margin-top:45px;
+    padding:20px;
+    font-size:14px;
+    color:aliceblue;
+}
+.prev-btn{
+    position:absolute;
+    left: 33%;
+    top: 43%;
+    z-index:1;
+    font-weight: bold;
+}
+.next-btn{
+    position:absolute;
+    right: 33%;
+    top: 43%;
+    z-index:1;
+    font-weight: bold;
+}
+.pagination{
+    margin-top: 30px;
+    position:relative;
+}
+.dot{
+    width:8px;
+    height:8px;
+    border:none;
+    border-radius: 50%;
+    background-color:white;
+}
+.dot.active-dot{
+    border-radius: 50%;
+    width:14px;
+    height:14px;
+    background-color:blue;
+    border:none;
+}
